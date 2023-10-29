@@ -15,7 +15,7 @@ export function setupAPIClient(ctx?: any) {
   let cookies = parseCookies(ctx)
 
   const api = axios.create({
-    baseURL: 'https://monipaep.icmc.usp.br',
+    baseURL: 'https://monipaep.icmc.usp.br:443',
     headers: {
       Authorization: `Bearer ${cookies['monipaep.token']}`
     }
